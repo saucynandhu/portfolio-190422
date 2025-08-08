@@ -2,12 +2,10 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
+      "src": "build.sh",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist",
-        "installCommand": "npm install --legacy-peer-deps",
-        "buildCommand": "npm install -g vite && npm run build"
+        "distDir": "dist"
       }
     }
   ],
